@@ -1,0 +1,461 @@
+.cleaning-hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.cleaning-hero-container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 1;
+}
+
+.cleaning-hero-content {
+  max-width: 700px;
+  text-align: left;
+}
+
+.cleaning-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cleaning-hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.cta-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #003d82;
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+}
+
+/* Services Section */
+.cleaning-services {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.cleaning-services-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.cleaning-services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cleaning-services-header h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.underline {
+  height: 4px;
+  width: 70px;
+  background-color: #0056b3;
+  margin: 0 auto;
+}
+
+.services-description {
+  max-width: 800px;
+  margin: 20px auto 0;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.services-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-category {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.category-icon {
+  font-size: 3rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.service-category h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.service-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.service-list li:last-child {
+  border-bottom: none;
+}
+
+/* Why Choose Us Section */
+.cleaning-why-choose-us {
+  padding: 100px 0;
+  background-color: #f5f8fa;
+}
+
+.cleaning-why-choose-us-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.cleaning-why-choose-us-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cleaning-why-choose-us-header h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.selling-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.selling-point {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.point-icon {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-right: 20px;
+  min-width: 50px;
+}
+
+.point-content h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.point-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.testimonials-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-header h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.testimonial-content {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.testimonial-author p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 100px 0;
+  background-color: #f5f8fa;
+}
+
+.contact-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-header p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 50px;
+}
+
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.2);
+}
+
+.submit-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #003d82;
+}
+
+.contact-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-bottom: 30px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.call-now-button {
+  display: inline-block;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.call-now-button:hover {
+  background-color: #003d82;
+}
+
+.cta-container {
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .cleaning-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cleaning-hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .cleaning-services,
+  .cleaning-why-choose-us,
+  .testimonials,
+  .contact-section {
+    padding: 70px 0;
+  }
+  
+  .cleaning-services-container,
+  .cleaning-why-choose-us-container,
+  .testimonials-container,
+  .contact-container {
+    padding: 0 30px;
+  }
+  
+  .cleaning-services-header h2,
+  .cleaning-why-choose-us-header h2,
+  .testimonials-header h2,
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+  
+  .selling-points-grid,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .selling-point {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cleaning-hero-container {
+    padding: 0 20px;
+  }
+  
+  .cleaning-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .cleaning-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .cleaning-services,
+  .cleaning-why-choose-us,
+  .testimonials,
+  .contact-section {
+    padding: 50px 0;
+  }
+  
+  .service-category,
+  .contact-form,
+  .contact-info {
+    padding: 25px 20px;
+  }
+}

@@ -1,0 +1,59 @@
+.back-to-top {
+  position: fixed;
+  bottom: 60px; /* Moved higher on the page from 30px */
+  right: 30px;
+  width: 60px; /* Increased from 50px */
+  height: 60px; /* Increased from 50px */
+  border-radius: 50%;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow to make it stick out */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  font-weight: bold; /* Added bold font weight */
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top svg {
+  font-size: 1.5rem; /* Increased from 1.2rem */
+}
+
+/* Add a subtle pulse animation to draw attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 86, 179, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 86, 179, 0); /* Increased pulse size */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 86, 179, 0);
+  }
+}
+
+.back-to-top:hover {
+  animation: pulse 1.5s infinite;
+  background-color: #003d82;
+  transform: scale(1.1); /* Added scale effect on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 55px; /* Increased from 45px */
+    height: 55px; /* Increased from 45px */
+    bottom: 40px; /* Moved higher from 20px */
+    right: 20px;
+  }
+}
