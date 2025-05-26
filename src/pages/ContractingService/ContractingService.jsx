@@ -119,7 +119,7 @@ const ContractingService = () => {
             transition={{ duration: 0.8 }}
           >
             <h1>Reliable Contracting Solutions Tailored to Your Needs</h1>
-            <p>From facility maintenance to workforce outsourcing, Excella Hospitality delivers professional, efficient, and affordable contracting services for businesses of all sizes.</p>
+            <p>Excella Hospitality delivers professional, efficient, and affordable contracting services for businesses of all sizes.</p>
             <motion.button 
               className="cta-button"
               whileHover={{ scale: 1.05 }}

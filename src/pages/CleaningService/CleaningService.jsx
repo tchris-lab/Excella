@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { FaHome, FaBuilding, FaIndustry, FaUserTie, FaLeaf, FaClock, FaCheckCircle } from 'react-icons/fa';
 import { Navbar, Footer, BackToTop } from '../../components';
 import './CleaningService.css';
+import { useRef } from 'react';
 
 const CleaningService = () => {
+  const contactSectionRef = useRef(null);
   const residentialServices = [
     'Housekeeping',
     'Deep Cleaning',
@@ -62,6 +64,9 @@ const CleaningService = () => {
       content: 'As a hotel manager, cleanliness is my top priority. Excella Hospitality has consistently delivered exceptional cleaning services that our guests notice and appreciate.'
     }
   ];
+  const scrollToContact = () => {
+    contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -83,6 +88,7 @@ const CleaningService = () => {
               className="cta-button"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={scrollToContact}
             >
               Book Our Service
             </motion.button>
@@ -233,7 +239,7 @@ const CleaningService = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact-section">
+      <section className="contact-section" ref={contactSectionRef}>
         <div className="contact-container">
           <motion.div 
             className="contact-header"

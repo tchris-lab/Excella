@@ -38,7 +38,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/src/assets/Group4.png" alt="Excella Logo" className="logo-image" />
+          <img src="/src/assets/logo4.png" alt="Excella Logo" className="logo-image" />
         </motion.div>
 
         <div className="menu-icon" onClick={toggleMenu}>

@@ -1,10 +1,21 @@
 import { motion } from 'framer-motion';
 import './Hero.css';
 import Loader from '../HeroStyledLoader/HeroStyle';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const scrollToServices = () => {
-    // Using setTimeout to ensure the DOM is fully loaded
     setTimeout(() => {
       const servicesSection = document.getElementById('services');
       if (servicesSection) {
@@ -14,7 +25,6 @@ const Hero = () => {
         });
       } else {
         console.error('Services section not found');
-        // Fallback: try to find the section by class name
         const servicesByClass = document.querySelector('.services');
         if (servicesByClass) {
           window.scrollTo({
@@ -23,7 +33,7 @@ const Hero = () => {
           });
         }
       }
-    }, 100); // Small delay to ensure DOM is ready
+    }, 100);
   };
 
   return (
@@ -36,8 +46,12 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1>Welcome to Excella Hospitality</h1>
-          <p>Your Premier Partner in Excellence, Delivering Unmatched Cleaning, Contracting, and Trading Services Across Qatar and Beyond.</p>
-       <Loader />
+          {isMobile ? (
+            <p>Your Premier Partner in Excellence. We deliver Unmatched Cleaning, Contracting, and Trading Services across Qatar and Beyond, with a focus on reliability, quality, and customer satisfaction. Discover the Excella difference today!</p>
+          ) : (
+            <p>Your Premier Partner in Excellence, Delivering Unmatched Cleaning, Contracting, and Trading Services Across Qatar and Beyond.</p>
+          )}
+          <Loader />
         </motion.div>
       </div>
     </section>

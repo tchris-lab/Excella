@@ -388,6 +388,79 @@
 }
 
 /* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .cleaning-hero-content h1 {
+    font-size: 3.2rem;
+  }
+  .cleaning-hero-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cleaning-hero {
+    height: 90vh;
+  }
+  .cleaning-hero-container {
+    padding: 0 40px;
+  }
+  .cleaning-hero-content {
+    text-align: left;
+    margin: 0 auto;
+  }
+  .cleaning-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .cleaning-hero-content p {
+    font-size: 2rem;
+  }
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cleaning-hero {
+    height: 60vh;
+  }
+  .cleaning-hero-container {
+    padding: 0 15px;
+  }
+  .cleaning-hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .cleaning-hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cleaning-hero {
+    height: 55vh;
+  }
+  .cleaning-hero-container {
+    padding: 0 12px;
+  }
+  .cleaning-hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .cleaning-hero-content p {
+    margin: 1.3rem 0;
+  }
+  .cta-button {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cleaning-hero-content h1 {
     font-size: 2.5rem;

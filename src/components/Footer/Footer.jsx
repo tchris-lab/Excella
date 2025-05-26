@@ -85,7 +85,7 @@ const Footer = () => {
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#why-choose-us">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+           
           </ul>
         </motion.div>
       </div>
