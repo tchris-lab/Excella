@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
+import logo4 from '../../assets/logo4.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/src/assets/logo4.png" alt="Excella Logo" className="logo-image" />
+          <img src={logo4} className="logo-image" />
         </motion.div>
 
         <div className="menu-icon" onClick={toggleMenu}>
