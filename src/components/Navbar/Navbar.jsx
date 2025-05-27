@@ -33,6 +33,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        <div className="logo-container" >
         <motion.div 
           className=""
           initial={{ opacity: 0 }}
@@ -41,6 +42,7 @@ const Navbar = () => {
         >
           <img src={logo4} className="logo-image" />
         </motion.div>
+        </div>
 
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}

@@ -45,6 +45,14 @@
   animation: logoGlow 3s infinite alternate;
 }
 
+.logo-container {
+  width: 500px; /* Adjusted width for better spacing */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures it stays to the left */
+}
+
 
 .logo-image { 
   max-height: 70px;
@@ -274,4 +282,11 @@
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
   }
+}
+
+
+@media screen and (max-width: 480px) {
+    .logo-image {
+        max-height: 60px;
+    }
 }
